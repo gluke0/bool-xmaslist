@@ -77,7 +77,7 @@ function createListElement(i) {
         <p>${gift.description}</p>
       </div>
       <strong class="price">${amount(gift.price)}</strong>
-      <button id="delete" data-index="${i}">❌</button>
+      <button id="delete" data-index="${i}"> ❌ </button>
     </li>
     `;
 }
