@@ -6,10 +6,41 @@
     <title>Christmas List</title>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     
+    <div class="container">
+        <header>
+            <div>
+                <h1>
+                    Xmas List
+                </h1>
+            </div>
+            <div>
+                Spesa Totale: <span> 0.00€ </span>
+            </div>
+        </header>
+
+        <main>
+            <ul class="list">
+                
+            </ul>
+
+            <form id="add-gift">
+                <div class="fields">
+                    <input type="text" name="name" id="name" placeholder="Nome" required>
+                    <input type="number" name="price" id="price" placeholder="Prezzo" min="0.01" step="0.01" max="100" required>
+                    <input type="text" name="gift" id="description" placeholder="Descrizione"  maxlength="50" required>
+                </div>
+                <button> + </button>
+            </form>
+        </main>
+    </div>
+
+
+
     <script src="main.js"></script>
 </body>
 </html>
