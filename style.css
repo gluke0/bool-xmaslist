@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
+    background-color: rgb(181, 162, 206);
     font-family: Livvic;
 }
 
@@ -72,6 +72,7 @@ input{
     border: none;
     border-radius: 0.8rem;
     width: 100%;
+    background-color: white;
 }
 
 .fields :nth-child(1){
@@ -94,4 +95,33 @@ button{
     display: flex;
     align-self: center;
     padding-bottom: 0.9rem;
+}
+
+.gift{
+    border: 5px solid white;
+    border-radius: 0.8rem;
+    display: flex;
+    margin-bottom: 0.6rem;
+}
+
+.info p{
+    margin-top: 0.4rem;
+}
+  
+.info{
+    width: 70%;
+    padding: 0.5rem;
+}
+  
+.price {
+    width: 20%;
+    padding: 0.5rem;
+}
+  
+#delete{
+    width: 10%;
+    border: none;
+    background-color: white;
+    padding: 1rem 1rem 1rem 0.6rem;
+    font-size: 2rem;
 }
