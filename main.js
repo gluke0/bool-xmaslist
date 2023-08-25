@@ -2,6 +2,7 @@
 const STORAGE_KEY = 'xmas-list-bool';
 
 const total = document.querySelector('span');
+const tot = document.querySelector('.tot');
 const list = document.querySelector('.list');
 const form = document.querySelector('#add-gift');
 const nameF = document.querySelector('#name');
@@ -48,9 +49,9 @@ function addGift(name, price, description) {
 function whatsTotal() {
     let total = 0;
     for (let i = 0; i < gifts.length; i++) {
-        total += gifts[i].price;
+        total += Number(gifts[i].price);
     }
-    total.innerText = amount(total);
+    tot.innerText = amount(total);
 }
 
 function amount(amount) {
